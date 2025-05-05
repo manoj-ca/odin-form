@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Norse;
+  font-weight: bold;
+  src: url("Norse-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+}
+
+.side {
+  flex: 1;
+  position: relative;
+  background-image: url(pic.jpg);
+  height: 1024px;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 225px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 150px;
+}
+
+.odin {
+  font-family: Norse;
+  font-size: 96px;
+  color: white;
+}
+
+.credit {
+  position: absolute;
+  text-align: center;
+  bottom: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  width: 100%;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main {
+  flex: 1.7;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.top {
+  top: 145px;
+  width: 700px;
+}
+
+.text {
+  position: absolute;
+  left: 48px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  position: absolute;
+  top: 375px;
+  background-color: white;
+  width: 100%;
+  height: 295px;
+  filter: drop-shadow(3px 3px 3px #bbb);
+}
+
+.title {
+  top: 12px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 60px;
+  left: 48px;
+  row-gap: 16px;
+}
+
+.input {
+  width: 330px;
+}
+
+label {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  width: 50%;
+}
+
+label span {
+  display: inline-block;
+}
+
+input {
+  font-size: 15px;
+  font-weight: bold;
+  width: 240px;
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 0;
+  outline: none;
+}
+
+#password:invalid {
+  border-color: red;
+}
+
+#password:valid {
+  border-color: #E5E7EB;
+}
+
+#confirm:invalid {
+  border-color: red;
+}
+
+#confirm:valid {
+  border-color: #E5E7EB;
+}
+
+input:focus,
+#password:valid:focus,
+#confirm:valid:focus {
+  border-color: blue;
+  filter: drop-shadow(3px 3px 3px #bbb);
+}
+
+button {
+  position: absolute;
+  top: 705px;
+  left: 48px;
+  width: 235px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #596D48;
+  border-radius: 8px;
+  border: none;
+  filter: drop-shadow(3px 3px 3px #bbb);
+}
+
+.acct {
+  position: absolute;
+  top: 770px;
+  left: 48px;
+  font-size: 18px;
+}
+
+.login {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596D48;
+}
